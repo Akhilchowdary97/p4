@@ -9,5 +9,3 @@ def home(request):
 def fact(request,n):
     n=int(n)
     return HttpResponse("<h3>Factorial is {}</h3>".format(factorial(n)))
-def child(request):
-    return render(request,"child.html")
